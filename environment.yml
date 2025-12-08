@@ -5,7 +5,7 @@ channels:
 
 # ── Core runtime ────────────────────────────────────────────────────
 dependencies:
-  - python=3.12
+  - python=3.11
   - jupyterlab
   - ipykernel
   - numpy
@@ -15,6 +15,8 @@ dependencies:
   - xgboost
   - xarray
   - dask
+  - distributed
+  - metpy
   - scipy
   - matplotlib         # keep until you swap in hvplot, etc.
   - seaborn
@@ -24,6 +26,7 @@ dependencies:
   - bokeh
   - pyfonts
   - pint
+  - zarr
 
 
 # ── Geospatial “minimum viable” (read rasters, shapefiles) ─────────
@@ -47,8 +50,8 @@ dependencies:
 
 # -- Hydrology specific
   - dataretrieval
-  - pip
+  #- pip
   - pip:
-    - metloom
+     - metloom
     #- pyforestscan
     #- open3d
